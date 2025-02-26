@@ -24,6 +24,18 @@ require (
 	github.com/sirupsen/logrus v1.9.3
 )
 
+replace (
+	github.com/ochinchina/supervisord/config => ./config
+	github.com/ochinchina/supervisord/events => ./events
+	github.com/ochinchina/supervisord/faults => ./faults
+	github.com/ochinchina/supervisord/logger => ./logger
+	github.com/ochinchina/supervisord/process => ./process
+	github.com/ochinchina/supervisord/signals => ./signals
+	github.com/ochinchina/supervisord/types => ./types
+	github.com/ochinchina/supervisord/util => ./util
+	github.com/ochinchina/supervisord/xmlrpcclient => ./xmlrpcclient
+)
+
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
